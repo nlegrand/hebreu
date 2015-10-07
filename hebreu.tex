@@ -1,18 +1,26 @@
-\documentclass[a5paper, 11pt]{article}
-\usepackage{geometry}
+\documentclass[a5paper, 10pt]{article}
+\usepackage[bottom=2cm, top=2cm, left=1.5cm, right=1.5cm]{geometry}
 \usepackage{fontspec}
-\usepackage[rldocument,extrafootnotefeatures]{bidi}
-\usepackage{fmultico}
 
 \setmainfont{Tinos}
 \setsansfont{Arimo}
 \setmonofont{Cousine}
 
+\usepackage{titlesec}
+\newfontfamily\headingfont[]{Arimo}
+\titleformat*{\section}{\bf\LARGE\headingfont}
+\titleformat*{\subsection}{\bf\Large\headingfont}
+
+\usepackage[rldocument,extrafootnotefeatures]{bidi}
+\usepackage{fmultico}
+\setlength\columnsep{0.8cm}
 \setlength{\parindent}{0pt}
 
 \newcommand{\lexi}[2]{{\raggedright\textbf{#1}\hfill\LR{#2}\par}}
 
-\title{עברית}
+% No I'm not ashamed of this horrible title hack, that's exactly where
+% I hate LaTeX :)
+\title{\vskip -4em\bf\LARGE\headingfont עברית}
 \date{}
 
 \begin{document}
