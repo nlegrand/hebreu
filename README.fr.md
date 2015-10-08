@@ -17,9 +17,11 @@ Dépendances
 - psutils
 - ConTeXt (only for pstopdf utility)
 - croscore fonts
+- la fonte Trashim CLM
 
 Sur Debian, `apt-get install texlive-full psutils fonts-croscore`
-devrait être suffisant.
+devrait être suffisant. Bon, il faut aussi installer [Trashim
+CLM](http://culmus.sourceforge.net/fancy/).
 
 Utilisation
 ===========
